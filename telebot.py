@@ -144,7 +144,6 @@ def random_string(slen=10):
 
 class UploadFile(threading.Thread):
 
-
    def __init__(self, token, file_id):
       threading.Thread.__init__(self)
       self.token = token
@@ -304,9 +303,6 @@ class TelegramException(Exception):
 
 
 def main():
-   """
-
-   """
    force_checkin()
    try:
       fetch_commands()
